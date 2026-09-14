@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-09-14T18:35:25.960212+00:00",
+  "model": "intfloat/multilingual-e5-base",
+  "model_url": "https://huggingface.co/intfloat/multilingual-e5-base",
+  "dimension": 768,
+  "index_type": "IndexFlatIP",
+  "similarity": "cosine (normalized vectors and inner product)",
+  "document_count": 38,
+  "chunk_count": 189,
+  "chunk_min_words": 100,
+  "chunk_max_words": 250,
+  "chunk_overlap_words": 40,
+  "build_seconds": 98.05
+}
