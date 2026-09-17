@@ -1,58 +1,38 @@
 @startuml
-actor "User / evaluate.py" as user
-participant "API / RagService" as rag
-participant "Retriever + FAISS" as retrieval
-participant "Safety filter" as safety
+title Задание 7: обработка одного тестового вопроса
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+
+actor "Оценщик\nevaluate.py" as evaluator
+participant "RAG-сервис" as rag
+database "Индекс FAISS" as index
 participant "Yandex LLM" as llm
-database "QueryLog JSONL" as log
-participant "Golden-set grading" as grader
-user -> rag : question
-alt service busy
-  rag -> log : status=error, ServiceBusy
-  rag --> user : HTTP 429
-else request accepted
-  rag -> retrieval : reload snapshot, embed query, top-k search
-  alt empty/corrupt index at startup
-    retrieval --> rag : initialization error
-    note right of rag : API is not ready; experiment reports setup_error
-  else search error
-    retrieval --> rag : exception
-    rag -> log : status=error, error_type
-    rag --> user : technical failure
-  else search completed
-    retrieval --> rag : chunks + scores + revision
-    rag -> safety : score threshold and injection filter
-    safety --> rag : eligible chunks
-    alt no eligible chunks
-      rag -> rag : unknown=true, no sources
-    else context available
-      rag -> llm : system prompt + question + chunks
-      alt timeout or invalid JSON
-        llm --> rag : GenerationError
-        rag -> log : status=error, not a refusal
-        rag --> user : HTTP 503
-      else valid JSON
-        llm --> rag : answer + evidence
-        rag -> rag : check safety, chunk IDs and nonempty evidence
-        alt insufficient facts or invalid evidence
-          rag -> rag : unknown=true, no sources
-        else evidence accepted
-          rag -> rag : answer with sources
-        end
-      end
-    end
-    opt answer or refusal available
-      rag -> log : question, timestamp, retrieval, sources,
-      note right of log : answer length, successful_answer,
-      note right of log : status, reason, duration, index revision
-      rag --> user : Answer
-    end
-  end
+database "Журнал\nlogs.jsonl" as log
+
+== Поиск контекста ==
+evaluator -> rag : Вопрос из эталонного набора
+rag -> index : Поиск top-5 фрагментов
+index --> rag : Фрагменты и score
+rag -> rag : Проверить порог score\nи отфильтровать опасные фрагменты
+
+== Один из трёх исходов ==
+alt Ответ: есть контекст, генерация и проверка успешны
+  rag -> llm : Вопрос + контекст
+  llm --> rag : Ответ + обоснование
+  rag -> rag : Проверить ссылки на фрагменты\nи сформировать ответ с источниками
+else Отказ: нет допустимых фрагментов
+  rag -> rag : «Я не знаю», без источников
+else Ошибка: есть контекст, но LLM не ответила вовремя
+  rag -> llm : Вопрос + контекст
+  llm --> rag : Ошибка тайм-аута
 end
-opt evaluation run
-  user -> grader : logged event + expected answer for corpus version
-  grader -> grader : refusal / keywords / expected source documents
-  grader -> log : run_id, stage, expected answer, passed
-  grader --> user : summary and failed case IDs
-end
+
+== Общая оценка результата ==
+rag -> rag : Зафиксировать событие в CaptureLog:\nвопрос, ответ, источники, длина, статус
+rag --> evaluator : Ответ / отказ / исключение
+evaluator -> evaluator : Оценить событие по эталону:\nключевые слова, источники или отказ\nТехническая ошибка → passed=false
+evaluator -> log : Записать событие и оценку passed
+
 @enduml
