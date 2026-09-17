@@ -56,7 +56,7 @@ python search_index.py "What is the Void Core capable of?" --index-dir vector_in
 
 ## Задание 4. Реализация RAG-бота с техниками промптинга
 
-Реализован [модуль RAG](rag_bot/): загрузка существующего FAISS-индекса, запрос с тем же E5-энкодером, поиск фрагментов, few-shot примеры, краткое пошаговое обоснование по источникам и генерация через Yandex Alice AI LLM Flash (Chat Completions API). Цитаты проверяются по найденным фрагментам, при недостатке данных возвращается «Я не знаю».
+Реализован [модуль RAG](rag_bot/): загрузка существующего FAISS-индекса, запрос с тем же E5-энкодером, поиск фрагментов, few-shot примеры, краткое пошаговое обоснование по источникам и генерация через Yandex Alice AI LLM Flash (Chat Completions API). Проверяется принадлежность ID источников найденным фрагментам; дословность цитат не проверяется. При недостатке данных возвращается «Я не знаю».
 
 Интерфейсы: [Telegram-бот](run_bot.py) и FastAPI (`POST /ask`, `GET /health`, `/docs`). Бот обращается к тому же API, которое проверяется [скриптом приёмки](check_api.py).
 
@@ -66,6 +66,12 @@ python search_index.py "What is the Void Core capable of?" --index-dir vector_in
 - [Dockerfile](Dockerfile) и [Compose](docker-compose.yml).
 
 Реальные примеры запросов и ответов через API сохранены в [диалогах задания 4](task4_dialogues.md), полный результат с цитатами и временем — в [JSON-отчёте](task4_api_results.json). API и Telegram-бот запускаются одной командой `docker compose up -d --build`.
+
+Скриншоты проверки задания 4:
+
+- [Скриншот 1](screenshots/Task4_1.png).
+- [Скриншот 2](screenshots/Task4_2.png).
+- [Скриншот 3](screenshots/Task4_3.png).
 
 ## Задание 5. Запуск и демонстрация работы бота
 
