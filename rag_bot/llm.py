@@ -24,7 +24,11 @@ class ChatGenerator:
                 f"{self.settings.llm_base_url}/chat/completions",
                 headers=headers,
                 json={"model": self.settings.llm_model, "messages": messages,
-                      "response_format": {"type": "json_object"}},
+                      "response_format": {"type": "json_schema", "json_schema": {
+                          "name": "rag_answer", "strict": True,
+                          "schema": GeneratedAnswer.model_json_schema(),
+                      }},
+                      "temperature": 0.3, "max_tokens": 1500},
                 timeout=(10, self.settings.llm_timeout),
             )
             response.raise_for_status()

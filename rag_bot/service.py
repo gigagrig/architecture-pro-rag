@@ -40,20 +40,39 @@ class RagService:
         documents = [chunk for chunk in found if chunk["score"] >= self.settings.min_score]
         if not documents:
             return self.unknown(question, len(found))
-        generated: GeneratedAnswer = self.generator.generate(messages_for(question, documents))
+        messages = messages_for(question, documents)
+        generated: GeneratedAnswer = self.generator.generate(messages)
+        by_id = {chunk["chunk_id"]: chunk for chunk in documents}
+        if not generated.unknown and generated.evidence and not self.valid_evidence(generated, by_id):
+            # One repair attempt with the same sources; never relax quote validation.
+            generated = self.generator.generate(messages + [
+                {"role": "assistant", "content": generated.model_dump_json()},
+                {"role": "user", "content": messages[-1]["content"] + "\n\n" + (
+                    "Исправь предыдущий JSON: одна или несколько цитат не входят дословно "
+                    "в text указанного chunk_id. Используй только documents в этом "
+                    "сообщении. Скопируй короткие непрерывные отрывки без изменений "
+                    "и укажи chunk_id каждого отрывка. Согласуй ответ с этими цитатами. "
+                    "Если подтверждения нет, верни unknown=true. Верни полный JSON."
+                )},
+            ])
         if generated.unknown or not generated.evidence or not generated.explanation:
             return self.unknown(question, len(found))
-        by_id = {chunk["chunk_id"]: chunk for chunk in documents}
+        if not self.valid_evidence(generated, by_id):
+            return self.unknown(question, len(found))
         sources = []
         for evidence in generated.evidence:
-            chunk = by_id.get(evidence.chunk_id)
-            # Reject fabricated citations, including quotations copied only from few-shot.
-            if chunk is None or not normalized(evidence.quote) or \
-                    normalized(evidence.quote) not in normalized(chunk["text"]):
-                return self.unknown(question, len(found))
+            chunk = by_id[evidence.chunk_id]
             sources.append(Source(chunk_id=chunk["chunk_id"], title=chunk["title"],
                                   source=chunk["source"], score=round(chunk["score"], 4),
                                   quote=evidence.quote))
         return Answer(question=question, answer=generated.answer,
                       explanation=generated.explanation, unknown=False,
                       sources=sources, retrieved_count=len(found), model=self.settings.llm_model)
+
+    @staticmethod
+    def valid_evidence(generated: GeneratedAnswer, by_id: dict[str, dict]) -> bool:
+        return all(
+            evidence.chunk_id in by_id and bool(normalized(evidence.quote))
+            and normalized(evidence.quote) in normalized(by_id[evidence.chunk_id]["text"])
+            for evidence in generated.evidence
+        )

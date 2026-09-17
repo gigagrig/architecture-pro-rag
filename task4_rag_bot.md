@@ -28,28 +28,18 @@ cp -n .env.example .env
 
 ## Подключение модели
 
-Для этого компьютера настроена локальная Qwen2.5 3B в Ollama (CPU, модель около 1,9 ГБ). API-ключ не нужен. Загрузите модель один раз:
-
-```bash
-docker compose up -d ollama
-docker compose exec ollama ollama pull qwen2.5:3b
-```
-
-Настройки `.env` для запуска Python-процессов на хосте:
+Для Yandex Alice AI LLM Flash положите ключ в `yandex_ai_api_key.txt` (файл исключён из Git) и задайте в `.env`:
 
 ```dotenv
-LLM_BASE_URL=http://127.0.0.1:11434/v1
-LLM_MODEL=qwen2.5:3b
+LLM_BASE_URL=https://ai.api.cloud.yandex.net/v1
+LLM_MODEL=gpt://b1g2bu1h99h8aoj25qf5/aliceai-llm-flash/latest
 LLM_API_KEY=
-LLM_TIMEOUT=300
-BOT_API_TIMEOUT=330
+LLM_API_KEY_FILE=yandex_ai_api_key.txt
 ```
 
-В Compose адрес модели автоматически заменяется на `http://ollama:11434/v1`, доступный внутри Docker-сети. Модель хранится в постоянном Docker volume `ollama_models`, контекст ограничен 8192 токенами. После обычного `docker compose down` повторная загрузка не требуется; `down -v` удалит также модель.
+В Docker ключ монтируется только в API через secret. Эмбеддинги вычисляются локально, вопрос и найденные фрагменты отправляются в Yandex. Токен Telegram в запрос LLM не передаётся.
 
-Клиент использует [совместимый интерфейс Ollama](https://docs.ollama.com/api/openai-compatibility): `POST /v1/chat/completions`, `messages`, JSON mode. Температура равна 0, предел ответа — 1200 токенов. При смене провайдера совместимость этих параметров нужно проверить отдельно.
-
-В текущей конфигурации генерация и эмбеддинги работают на компьютере; сообщения доставляются через Telegram. Токен Telegram в запрос LLM не передаётся.
+Клиент использует [Chat Completions API](https://aistudio.yandex.ru/ru/docs/ai-studio/api/Chat-Completions/createChatCompletion) со структурированным JSON по схеме `GeneratedAnswer`, температурой 0,3 и пределом ответа 1500 токенов. Если цитата или её chunk_id не проходят проверку, модель получает одну попытку исправить ответ по тем же документам. Повторная ошибка цитирования приводит к «Я не знаю»; ошибки связи и формата возвращаются как HTTP 503.
 
 Остальные настройки описаны в [.env.example](.env.example). `TELEGRAM_ALLOWED_USER_IDS` позволяет ограничить доступ числовыми Telegram ID через запятую; пустое значение разрешает все личные чаты. API предназначено для локальной проверки, без авторизации.
 
@@ -100,6 +90,8 @@ python check_api.py --output task4_api_results.json
 
 Скрипт `check_api.py` задаёт пять вопросов с известными ответами и два без ответа, проверяет ключевые факты, наличие источников и сохраняет реальные ответы и время запросов в JSON. Это базовая проверка, не полноценная оценка качества. Вопросы и ожидаемые факты приведены в инструкции Telegram.
 
+Реальные примеры: [пять ответов и два отказа](task4_dialogues.md), [полный JSON-отчёт](task4_api_results.json).
+
 Автоматические тесты без внешних сервисов:
 
 ```bash
@@ -110,23 +102,22 @@ python -m unittest discover -s tests -v
 
 ## Docker
 
-FAISS — встроенная библиотека, а не отдельный сетевой сервер. Compose запускает три сервиса: локальную Ollama, API с индексом FAISS и Telegram-процесс. После загрузки модели:
+FAISS — встроенная библиотека, а не отдельный сетевой сервер. Compose запускает два сервиса: API с индексом FAISS и Telegram-процесс. После подготовки `.env`, файлов ключей и индекса:
 
 ```bash
-docker compose build
-docker compose up -d
+docker compose up -d --build
 docker compose logs -f api bot
 docker compose down
 ```
 
-Индекс монтируется только для чтения, кеш модели сохраняется в `.cache/embeddings`. Токен монтируется только в контейнер бота через secret. API опубликовано на `127.0.0.1:8000`. Не запускайте одновременно контейнер бота и `python run_bot.py`.
+Индекс монтируется только для чтения, кеш E5 сохраняется в `.cache/embeddings`. Ключ Yandex монтируется только в API, токен Telegram — только в бот, оба через secrets. API опубликовано на `127.0.0.1:8000`. Не запускайте одновременно контейнер бота и `python run_bot.py`.
 
-Для другого сервера LLM измените `LLM_BASE_URL` также в `environment` сервиса `api` в Compose. Параметры Compose имеют приоритет над `.env`.
+Адрес и URI модели берутся из `.env`. В Compose переопределяется только путь к ключу: `/run/secrets/yandex_api_key`. Для остановки сервисов используйте `docker compose down`.
 
 ## Использованные интерфейсы
 
 - [Telegram Bot API](https://core.telegram.org/bots/api): `getMe`, `getWebhookInfo`, `getUpdates`, `sendMessage`, `sendChatAction`.
 - [FastAPI lifespan](https://fastapi.tiangolo.com/advanced/events/): загрузка ресурсов при старте приложения.
-- [Ollama в Docker](https://docs.ollama.com/docker) и [Qwen2.5 3B](https://ollama.com/library/qwen2.5:3b): локальный запуск и характеристики модели.
+- [Yandex AI Studio Chat Completions](https://aistudio.yandex.ru/ru/docs/ai-studio/api/Chat-Completions/createChatCompletion): генерация и структурированный JSON.
 
 Ограничения: нет истории диалога, потоковой выдачи, распределённой очереди и полной защиты от prompt injection. Расширенная демонстрация защиты относится к заданию 5.

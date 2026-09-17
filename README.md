@@ -34,7 +34,13 @@ python search_index.py "What is the Void Core capable of?"
 - [Настройка LLM, запуск API/бота и автоматическая проверка](task4_rag_bot.md)
 - [Инструкция для человека: проверка через Telegram](TELEGRAM_TESTING.md)
 
-После заполнения `.env` запустите в двух терминалах:
+Используется Yandex Alice AI LLM Flash. Скопируйте `.env.example` в `.env`, положите ключ Yandex в `yandex_ai_api_key.txt`, токен Telegram — в `telegram_bot_token.txt`. После подготовки индекса запустите оба сервиса:
+
+```bash
+docker compose up -d --build
+```
+
+Для запуска без Docker используйте два терминала:
 
 ```bash
 python -m uvicorn rag_bot.api:app --host 127.0.0.1 --port 8000
