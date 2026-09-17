@@ -5,6 +5,7 @@ from threading import BoundedSemaphore
 from rag_bot.config import Settings
 from rag_bot.prompts import messages_for
 from rag_bot.schemas import Answer, GeneratedAnswer, Source, UNKNOWN_ANSWER
+from rag_bot.safety import filter_documents, sanitize_question, unsafe_text
 
 
 class ServiceBusy(Exception):
@@ -33,11 +34,14 @@ class RagService:
 
     def _ask(self, question: str) -> Answer:
         found = self.retriever.search(question, self.settings.top_k)
-        documents = [chunk for chunk in found if chunk["score"] >= self.settings.min_score]
+        documents = filter_documents(
+            [chunk for chunk in found if chunk["score"] >= self.settings.min_score])
         if not documents:
             return self.unknown(question, len(found))
-        messages = messages_for(question, documents)
+        messages = messages_for(sanitize_question(question), documents)
         generated: GeneratedAnswer = self.generator.generate(messages)
+        if unsafe_text(generated.model_dump_json()):
+            return self.unknown(question, len(found))
         by_id = {chunk["chunk_id"]: chunk for chunk in documents}
         if generated.unknown or not generated.evidence or not generated.explanation:
             return self.unknown(question, len(found))

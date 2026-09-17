@@ -48,3 +48,7 @@ python run_bot.py
 ```
 
 API: `http://127.0.0.1:8000/docs`. Проверка ответов: `python check_api.py`.
+
+## Задание 5: демонстрация и prompt injection
+
+[Описание защиты и команды запуска](task5_demonstration.md). Реальные ответы сохранены в [текстовом логе](task5_run.log) и [JSON](tasks_artifacts/task5_results.json). Повторная проверка после индексации тестового документа: `python demonstrate_task5.py`.

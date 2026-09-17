@@ -15,6 +15,7 @@ from pathlib import Path
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from rag_bot.cli import ScriptParser
 
 
 DEFAULT_MODEL = "intfloat/multilingual-e5-base"
@@ -32,7 +33,7 @@ class Chunk:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
+    parser = ScriptParser(
         description=(
             "Split entity Markdown files into word-bounded chunks, encode them "
             "with multilingual-e5-base, and save an IndexFlatIP FAISS index."
@@ -40,8 +41,14 @@ def parse_args() -> argparse.Namespace:
         epilog=(
             "Example: ./build_index.py --knowledge-dir knowledge_base "
             "--output-dir vector_index"
+            "\nOptional: --extra-document fixtures/prompt_injection.txt"
+            "\nOutputs: faiss.index, chunks.jsonl, manifest.json. Exit: 0 success, 1 build error, 2 invalid input."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--extra-document", type=Path, action="append", default=[],
+        help="Additional UTF-8 text document; may be short. Repeat for multiple files.",
     )
     parser.add_argument(
         "--knowledge-dir",
@@ -191,6 +198,19 @@ def main() -> int:
             args.max_words,
             args.overlap_words,
         )
+        for path in args.extra_document:
+            print(f"Reading additional document: {path}")
+            body = path.read_text(encoding="utf-8").strip()
+            if not body:
+                raise ValueError(f"Empty additional document: {path}")
+            pieces = split_words(body, 1, args.max_words, 0)
+            for sequence, (start, end, text) in enumerate(pieces, start=1):
+                chunks.append(Chunk(f"{path.stem}-chunk-{sequence:03d}",
+                                    path.as_posix(), path.stem, start, end, text))
+            document_count += 1
+            print(f"Created chunks for {path}: {len(pieces)}")
+        if len({chunk.chunk_id for chunk in chunks}) != len(chunks):
+            raise ValueError("Duplicate chunk IDs in input documents")
     except (OSError, ValueError) as error:
         print(f"Cannot prepare chunks: {error}")
         return 2
@@ -248,6 +268,7 @@ def main() -> int:
         "chunk_min_words": args.min_words,
         "chunk_max_words": args.max_words,
         "chunk_overlap_words": args.overlap_words,
+        "extra_documents": [path.as_posix() for path in args.extra_document],
         "build_seconds": round(elapsed, 2),
     }
     manifest_path = args.output_dir / "manifest.json"
