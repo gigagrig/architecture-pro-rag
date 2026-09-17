@@ -28,3 +28,17 @@ python search_index.py "What is the Void Core capable of?"
 ```
 
 Первый запуск `build_index.py` загружает модель размером около 1,1 ГБ. Последующие запуски используют локальный кеш. Для полностью автономного запуска можно передать сохранённый каталог через `--cache-folder` и добавить `--local-files-only`.
+
+## Задание 4: Telegram-бот и API
+
+- [Настройка LLM, запуск API/бота и автоматическая проверка](task4_rag_bot.md)
+- [Инструкция для человека: проверка через Telegram](TELEGRAM_TESTING.md)
+
+После заполнения `.env` запустите в двух терминалах:
+
+```bash
+python -m uvicorn rag_bot.api:app --host 127.0.0.1 --port 8000
+python run_bot.py
+```
+
+API: `http://127.0.0.1:8000/docs`. Проверка ответов: `python check_api.py`.

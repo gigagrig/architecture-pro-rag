@@ -30,6 +30,14 @@ go.work.sum
 __pycache__/
 *.py[cod]
 
+
+#credentials
+telegram_bot_token.txt
+*_api_key.txt
+.cache/
+runtime/
+log/
+
 # Editor/IDE
 # .idea/
 # .vscode/
