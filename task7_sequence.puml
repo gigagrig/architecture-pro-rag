@@ -1,0 +1,58 @@
+@startuml
+actor "User / evaluate.py" as user
+participant "API / RagService" as rag
+participant "Retriever + FAISS" as retrieval
+participant "Safety filter" as safety
+participant "Yandex LLM" as llm
+database "QueryLog JSONL" as log
+participant "Golden-set grading" as grader
+user -> rag : question
+alt service busy
+  rag -> log : status=error, ServiceBusy
+  rag --> user : HTTP 429
+else request accepted
+  rag -> retrieval : reload snapshot, embed query, top-k search
+  alt empty/corrupt index at startup
+    retrieval --> rag : initialization error
+    note right of rag : API is not ready; experiment reports setup_error
+  else search error
+    retrieval --> rag : exception
+    rag -> log : status=error, error_type
+    rag --> user : technical failure
+  else search completed
+    retrieval --> rag : chunks + scores + revision
+    rag -> safety : score threshold and injection filter
+    safety --> rag : eligible chunks
+    alt no eligible chunks
+      rag -> rag : unknown=true, no sources
+    else context available
+      rag -> llm : system prompt + question + chunks
+      alt timeout or invalid JSON
+        llm --> rag : GenerationError
+        rag -> log : status=error, not a refusal
+        rag --> user : HTTP 503
+      else valid JSON
+        llm --> rag : answer + evidence
+        rag -> rag : check safety, chunk IDs and nonempty evidence
+        alt insufficient facts or invalid evidence
+          rag -> rag : unknown=true, no sources
+        else evidence accepted
+          rag -> rag : answer with sources
+        end
+      end
+    end
+    opt answer or refusal available
+      rag -> log : question, timestamp, retrieval, sources,
+      note right of log : answer length, successful_answer,
+      note right of log : status, reason, duration, index revision
+      rag --> user : Answer
+    end
+  end
+end
+opt evaluation run
+  user -> grader : logged event + expected answer for corpus version
+  grader -> grader : refusal / keywords / expected source documents
+  grader -> log : run_id, stage, expected answer, passed
+  grader --> user : summary and failed case IDs
+end
+@enduml

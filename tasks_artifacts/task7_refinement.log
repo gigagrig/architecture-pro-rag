@@ -1,0 +1,86 @@
+{"time": "2026-09-17T22:17:58.152253+00:00", "event": "start", "knowledge_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base", "index_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/vector_index"}
+{"time": "2026-09-17T22:17:58.152386+00:00", "event": "file_opened", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/update.lock"}
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_01.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_01.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_02.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_02.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_03.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_03.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_04.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_04.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_05.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_05.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_06.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_06.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_07.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_07.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_08.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_08.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_09.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_09.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_10.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_10.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_11.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_11.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_12.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_12.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_13.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_13.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_14.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_14.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_15.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_15.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_16.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_16.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_17.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_17.md: 1
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_18.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_18.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_19.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_19.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_20.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_20.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_21.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_21.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_22.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_22.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_23.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_23.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_24.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_24.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_25.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_25.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_26.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_26.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_27.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_27.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_28.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_28.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_29.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_29.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_30.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_30.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_31.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_31.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_32.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_32.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_33.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_33.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_34.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_34.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_35.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_35.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_36.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_36.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_37.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_37.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_38.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_38.md: 5
+{"time": "2026-09-17T22:17:58.165158+00:00", "event": "embedding", "new_chunks": 1, "reused_chunks": 185}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8161.48it/s]
+{"time": "2026-09-17T22:18:00.482661+00:00", "event": "directory_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/de658db7347444b98e640430a810afa1"}
+{"time": "2026-09-17T22:18:00.486583+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/de658db7347444b98e640430a810afa1/faiss.index"}
+{"time": "2026-09-17T22:18:00.486687+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/de658db7347444b98e640430a810afa1/chunks.jsonl"}
+{"time": "2026-09-17T22:18:00.486760+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/de658db7347444b98e640430a810afa1/manifest.json"}
+{"time": "2026-09-17T22:18:00.486925+00:00", "event": "published", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/current", "revision": "de658db7347444b98e640430a810afa1"}
+{"time": "2026-09-17T22:18:00.487023+00:00", "event": "finish", "status": "updated", "new_chunks": 1, "index_size": 186, "added_files": 0, "changed_files": 1, "deleted_files": 0, "errors": 0, "elapsed_seconds": 2.33}

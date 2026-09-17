@@ -58,3 +58,9 @@ API: `http://127.0.0.1:8000/docs`. Проверка ответов: `python chec
 [Описание и проверка](task6_index_updates.md), [диаграмма](task6_architecture.puml).
 Сервис `index-updater` из Docker Compose обновляет индекс при запуске и ежедневно в 06:00 по Москве.
 Новые материалы помещайте в `knowledge_base/entity_*.md`; API подхватывает новую версию перед поиском.
+
+## Задание 7: оценка покрытия и качества
+
+[Результаты эксперимента и инструкция](task7_coverage.md), [эталонные вопросы](golden_questions.txt), [журнал ответов](logs.jsonl).
+Запуск трёх вариантов базы: `python evaluate.py --experiment`.
+API автоматически сохраняет обработанные RAG-запросы в `runtime/queries.jsonl`.

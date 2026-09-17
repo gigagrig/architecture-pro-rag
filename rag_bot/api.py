@@ -2,6 +2,10 @@
 
 from contextlib import asynccontextmanager
 import logging
+import os
+from pathlib import Path
+
+from rag_bot.query_log import QueryLog
 
 from fastapi import FastAPI, HTTPException
 
@@ -19,7 +23,8 @@ def create_app(service: RagService | None = None) -> FastAPI:
 
             settings = Settings.from_env()
             logging.getLogger("uvicorn.error").info("Loading FAISS index and embedding model")
-            app.state.rag = RagService(settings, Retriever(settings), ChatGenerator(settings))
+            app.state.rag = RagService(settings, Retriever(settings), ChatGenerator(settings),
+                                       QueryLog(Path(os.getenv("QUERY_LOG_PATH", "runtime/queries.jsonl"))))
         else:
             app.state.rag = service
         yield

@@ -4,6 +4,7 @@ services:
     image: quantumforge-rag:task4
     env_file: .env
     environment:
+      QUERY_LOG_PATH: /app/runtime/queries.jsonl
       INDEX_DIR: /app/vector_index
       EMBEDDING_CACHE: /models
       LLM_API_KEY_FILE: /run/secrets/yandex_api_key
@@ -12,6 +13,7 @@ services:
     ports:
       - "127.0.0.1:8000:8000"
     volumes:
+      - ./runtime:/app/runtime
       - ./vector_index:/app/vector_index:ro
       - ./.cache/embeddings:/models
     healthcheck:

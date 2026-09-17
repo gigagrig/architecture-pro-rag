@@ -1,0 +1,48 @@
+test_busy_request_is_logged_without_releasing_occupied_slot (test_evaluation.EvaluationTests.test_busy_request_is_logged_without_releasing_occupied_slot) ... ok
+test_extra_wrong_apprentice_fails_refined_grader (test_evaluation.EvaluationTests.test_extra_wrong_apprentice_fails_refined_grader) ... ok
+test_filtered_search_results_are_distinct_from_eligible (test_evaluation.EvaluationTests.test_filtered_search_results_are_distinct_from_eligible) ... ok
+test_generation_error_is_not_unknown_and_has_no_secret (test_evaluation.EvaluationTests.test_generation_error_is_not_unknown_and_has_no_secret) ... ok
+test_golden_profiles_have_required_coverage (test_evaluation.EvaluationTests.test_golden_profiles_have_required_coverage) ... ok
+test_grading_catches_wrong_fact_and_wrong_source (test_evaluation.EvaluationTests.test_grading_catches_wrong_fact_and_wrong_source) ... ok
+test_grading_distinguishes_correct_refusal_from_error (test_evaluation.EvaluationTests.test_grading_distinguishes_correct_refusal_from_error) ... ok
+test_invalid_evidence_is_logged (test_evaluation.EvaluationTests.test_invalid_evidence_is_logged) ... ok
+test_log_failure_preserves_answer_and_releases_slot (test_evaluation.EvaluationTests.test_log_failure_preserves_answer_and_releases_slot) ... ok
+test_no_chunks_is_a_refusal_not_a_success (test_evaluation.EvaluationTests.test_no_chunks_is_a_refusal_not_a_success) ... ok
+test_offline_reassessment_and_incomplete_log (test_evaluation.EvaluationTests.test_offline_reassessment_and_incomplete_log) ... ok
+test_successful_answer_logs_actual_retrieval_and_sources (test_evaluation.EvaluationTests.test_successful_answer_logs_actual_retrieval_and_sources) ... ok
+test_verified_secondary_weapon_source_is_allowed (test_evaluation.EvaluationTests.test_verified_secondary_weapon_source_is_allowed) ... ok
+test_busy (test_rag_bot.ApiTests.test_busy) ... ok
+test_generation_failure_is_not_unknown (test_rag_bot.ApiTests.test_generation_failure_is_not_unknown) ... ok
+test_health_and_question (test_rag_bot.ApiTests.test_health_and_question) ... ok
+test_input_validation (test_rag_bot.ApiTests.test_input_validation) ... ok
+test_errors_do_not_leak_secrets (test_rag_bot.LlmTests.test_errors_do_not_leak_secrets) ... ok
+test_invalid_json_is_upstream_failure (test_rag_bot.LlmTests.test_invalid_json_is_upstream_failure) ... ok
+test_real_http_contract (test_rag_bot.LlmTests.test_real_http_contract) ... ok
+test_empty_retrieval (test_rag_bot.PipelineTests.test_empty_retrieval) ... ok
+test_fabricated_source_or_blank_quote_rejected (test_rag_bot.PipelineTests.test_fabricated_source_or_blank_quote_rejected) ... ok
+test_few_shot_is_not_current_evidence (test_rag_bot.PipelineTests.test_few_shot_is_not_current_evidence) ... ok
+test_grounded_answer (test_rag_bot.PipelineTests.test_grounded_answer) ... ok
+test_low_score_skips_llm (test_rag_bot.PipelineTests.test_low_score_skips_llm) ... ok
+test_missing_evidence_rejected (test_rag_bot.PipelineTests.test_missing_evidence_rejected) ... ok
+test_model_unknown (test_rag_bot.PipelineTests.test_model_unknown) ... ok
+test_paraphrased_quote_is_accepted_without_retry (test_rag_bot.PipelineTests.test_paraphrased_quote_is_accepted_without_retry) ... ok
+test_access_control (test_rag_bot.TelegramTests.test_access_control) ... ok
+test_api_down (test_rag_bot.TelegramTests.test_api_down) ... ok
+test_groups_are_ignored (test_rag_bot.TelegramTests.test_groups_are_ignored) ... ok
+test_long_unicode_reply_is_split (test_rag_bot.TelegramTests.test_long_unicode_reply_is_split) ... ok
+test_nontext_and_long_input (test_rag_bot.TelegramTests.test_nontext_and_long_input) ... ok
+test_start_without_api (test_rag_bot.TelegramTests.test_start_without_api) ... ok
+test_telegram_to_actual_api_route (test_rag_bot.TelegramTests.test_telegram_to_actual_api_route) ... ok
+test_token_not_in_error (test_rag_bot.TelegramTests.test_token_not_in_error) ... ok
+test_injected_chunk_never_reaches_generator (test_safety.SafetyTests.test_injected_chunk_never_reaches_generator) ... ok
+test_metadata_injection_is_filtered (test_safety.SafetyTests.test_metadata_injection_is_filtered) ... ok
+test_payload_in_any_generated_field_is_blocked (test_safety.SafetyTests.test_payload_in_any_generated_field_is_blocked) ... ok
+test_safe_chunk_survives_mixed_retrieval (test_safety.SafetyTests.test_safe_chunk_survives_mixed_retrieval) ... ok
+test_system_constructs_removed_from_question (test_safety.SafetyTests.test_system_constructs_removed_from_question) ... ok
+test_real_document_and_hot_reload (test_update_index.RealUpdateTests.test_real_document_and_hot_reload) ... skipped 'Set TASK6_REAL=1 for cached E5 integration'
+test_snapshot_lifecycle (test_update_index.UpdateTests.test_snapshot_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.095s
+
+OK (skipped=1)

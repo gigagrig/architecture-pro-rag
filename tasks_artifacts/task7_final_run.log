@@ -1,0 +1,29 @@
+Evaluation started: 20260917T221826Z-b1eaa30f; index=/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/vector_index; golden=/home/dev15/Study/architecture-pro-rag/golden_questions.txt
+Created or opened request log: /home/dev15/Study/architecture-pro-rag/logs.jsonl
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6065.01it/s]
+/home/dev15/Study/architecture-pro-rag/rag_bot/retrieval.py:25: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if self.model.get_sentence_embedding_dimension() != self.index.d:
+restored: known_01: Кто сестра-близнец Kael Ardyn?
+PASS: Сестра-близнец Kael Ardyn — Lyra Voss.
+restored: known_02: На какой планете вырос Kael Ardyn?
+PASS: Kael Ardyn вырос на пустынной планете Драксос (Draxos).
+restored: known_03: Что за оружие arcblade?
+FAIL: Arcblade — это светящийся лазерный меч длиной около 0,91 м, который исходит из металлической рукояти длиной около 27 см. Источником энергии меча служит кристалл кибера. Это фирменное оружие Ордена Стражей Эфира (используют синие, зелёные и другие клинки) и Пакта Нуль (используют красные клинки). Существуют разные варианты arcblade, включая двуклинковый, с изогнутой рукоятью и другие.
+restored: known_04: К какому виду принадлежит Bronn Kesh?
+PASS: Bronn Kesh принадлежит к виду Vardani.
+restored: known_05: Как называется корабль, на котором Bronn Kesh служит вторым пилотом?
+PASS: Корабль называется Dawn Skipper.
+restored: known_06: Кто ученик Quorin Jaal в Veiled Omen?
+PASS: Ученик Quorin Jaal в Veiled Omen — Orin Valis.
+restored: known_07: Какое обозначение было у Korr на службе в Ascendant Order?
+PASS: Обозначение Korr на службе в Ascendant Order — FN-2187.
+restored: gap_01: Кем Xarn Velgor приходится Kael Ardyn?
+PASS: Xarn Velgor — отец Kael Ardyn.
+restored: gap_02: Какие объекты способен уничтожать Void Core?
+PASS: Void Core способен уничтожать целые планеты.
+restored: absent_01: Какой любимый десерт Kael Ardyn?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+restored: absent_02: Какой пароль от Wi-Fi в офисе QuantumForge?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+Created summary: tasks_artifacts/task7_final_summary.json; appended log: logs.jsonl
+Evaluation finished; failures=1

@@ -1,0 +1,68 @@
+{
+  "run_id": "20260917T221342Z-a240229b",
+  "method": "Reassessment of recorded responses; no new LLM requests",
+  "assessed_at": "2026-09-17T22:19:23.181285+00:00",
+  "golden_sha256": "97b84643a327b20cdabb2e13a7be9a80ebd3c21dcbb4f1ce2cb3829369251aad",
+  "stages": {
+    "baseline": {
+      "total": 11,
+      "passed": 10,
+      "expected_answers": 9,
+      "correct_answers": 8,
+      "expected_refusals": 2,
+      "correct_refusals": 2,
+      "false_refusals": 0,
+      "unsupported_answers": 0,
+      "errors": 0,
+      "retrieval_hits": 9,
+      "failed_cases": [
+        "known_06"
+      ]
+    },
+    "gaps": {
+      "total": 11,
+      "passed": 11,
+      "expected_answers": 7,
+      "correct_answers": 7,
+      "expected_refusals": 4,
+      "correct_refusals": 4,
+      "false_refusals": 0,
+      "unsupported_answers": 0,
+      "errors": 0,
+      "retrieval_hits": 7,
+      "failed_cases": []
+    },
+    "restored": {
+      "total": 11,
+      "passed": 10,
+      "expected_answers": 9,
+      "correct_answers": 8,
+      "expected_refusals": 2,
+      "correct_refusals": 2,
+      "false_refusals": 0,
+      "unsupported_answers": 0,
+      "errors": 0,
+      "retrieval_hits": 9,
+      "failed_cases": [
+        "known_06"
+      ]
+    }
+  },
+  "changed_verdicts": [
+    {
+      "stage": "baseline",
+      "case_id": "known_06",
+      "answer": "Учениками Quorin Jaal в Veiled Omen являются Orin Valis и Aeron Ardyn.",
+      "original_passed": true,
+      "passed": false
+    },
+    {
+      "stage": "restored",
+      "case_id": "known_06",
+      "answer": "Учениками Quorin Jaal в Veiled Omen являются Orin Valis и Aeron Ardyn.",
+      "original_passed": true,
+      "passed": false
+    }
+  ],
+  "failures": 2
+}
