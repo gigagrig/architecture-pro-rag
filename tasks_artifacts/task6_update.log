@@ -1,0 +1,361 @@
+test_real_document_and_hot_reload (tests.test_update_index.RealUpdateTests.test_real_document_and_hot_reload) ... Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6726.35it/s]
+/home/dev15/Study/architecture-pro-rag/rag_bot/retrieval.py:25: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if self.model.get_sentence_embedding_dimension() != self.index.d:
+{"time": "2026-09-17T22:08:43.977218+00:00", "event": "start", "knowledge_dir": "/tmp/task6-qt4yw_ei/knowledge", "index_dir": "/tmp/task6-qt4yw_ei/index"}
+{"time": "2026-09-17T22:08:43.977353+00:00", "event": "file_opened", "path": "/tmp/task6-qt4yw_ei/index/update.lock"}
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_01.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_01.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_02.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_02.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_03.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_03.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_04.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_04.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_05.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_05.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_06.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_06.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_07.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_07.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_08.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_08.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_09.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_09.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_10.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_10.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_11.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_11.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_12.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_12.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_13.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_13.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_14.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_14.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_15.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_15.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_16.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_16.md: 4
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_17.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_17.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_18.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_18.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_19.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_19.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_20.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_20.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_21.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_21.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_22.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_22.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_23.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_23.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_24.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_24.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_25.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_25.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_26.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_26.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_27.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_27.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_28.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_28.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_29.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_29.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_30.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_30.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_31.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_31.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_32.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_32.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_33.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_33.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_34.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_34.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_35.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_35.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_36.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_36.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_37.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_37.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_38.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_38.md: 5
+{"time": "2026-09-17T22:08:43.994057+00:00", "event": "embedding", "new_chunks": 0, "reused_chunks": 190}
+{"time": "2026-09-17T22:08:43.995973+00:00", "event": "directory_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/efff88019c87480a9ae75cfff04c9f23"}
+{"time": "2026-09-17T22:08:44.001214+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/efff88019c87480a9ae75cfff04c9f23/faiss.index"}
+{"time": "2026-09-17T22:08:44.001381+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/efff88019c87480a9ae75cfff04c9f23/chunks.jsonl"}
+{"time": "2026-09-17T22:08:44.001471+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/efff88019c87480a9ae75cfff04c9f23/manifest.json"}
+{"time": "2026-09-17T22:08:44.001653+00:00", "event": "published", "path": "/tmp/task6-qt4yw_ei/index/current", "revision": "efff88019c87480a9ae75cfff04c9f23"}
+{"time": "2026-09-17T22:08:44.001742+00:00", "event": "finish", "status": "updated", "new_chunks": 0, "index_size": 190, "added_files": 39, "changed_files": 0, "deleted_files": 0, "errors": 0, "elapsed_seconds": 0.02}
+{"time": "2026-09-17T22:08:44.002415+00:00", "event": "start", "knowledge_dir": "/tmp/task6-qt4yw_ei/knowledge", "index_dir": "/tmp/task6-qt4yw_ei/index"}
+{"time": "2026-09-17T22:08:44.002550+00:00", "event": "file_opened", "path": "/tmp/task6-qt4yw_ei/index/update.lock"}
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_01.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_01.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_02.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_02.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_03.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_03.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_04.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_04.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_05.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_05.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_06.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_06.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_07.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_07.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_08.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_08.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_09.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_09.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_10.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_10.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_11.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_11.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_12.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_12.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_13.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_13.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_14.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_14.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_15.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_15.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_16.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_16.md: 4
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_17.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_17.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_18.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_18.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_19.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_19.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_20.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_20.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_21.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_21.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_22.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_22.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_23.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_23.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_24.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_24.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_25.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_25.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_26.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_26.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_27.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_27.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_28.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_28.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_29.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_29.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_30.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_30.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_31.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_31.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_32.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_32.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_33.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_33.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_34.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_34.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_35.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_35.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_36.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_36.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_37.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_37.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_38.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_38.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_39.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_39.md: 1
+{"time": "2026-09-17T22:08:44.018307+00:00", "event": "embedding", "new_chunks": 1, "reused_chunks": 190}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7377.29it/s]
+{"time": "2026-09-17T22:08:47.209590+00:00", "event": "directory_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/52c83cd79dde42c584d4b907320490eb"}
+{"time": "2026-09-17T22:08:47.213487+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/52c83cd79dde42c584d4b907320490eb/faiss.index"}
+{"time": "2026-09-17T22:08:47.213599+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/52c83cd79dde42c584d4b907320490eb/chunks.jsonl"}
+{"time": "2026-09-17T22:08:47.213639+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/52c83cd79dde42c584d4b907320490eb/manifest.json"}
+{"time": "2026-09-17T22:08:47.213753+00:00", "event": "published", "path": "/tmp/task6-qt4yw_ei/index/current", "revision": "52c83cd79dde42c584d4b907320490eb"}
+{"time": "2026-09-17T22:08:47.213808+00:00", "event": "finish", "status": "updated", "new_chunks": 1, "index_size": 191, "added_files": 1, "changed_files": 0, "deleted_files": 0, "errors": 0, "elapsed_seconds": 3.21}
+{"time": "2026-09-17T22:08:47.290594+00:00", "event": "search_verified", "title": "Lumen Relay Observatory", "score": 0.8615820407867432}
+{"time": "2026-09-17T22:08:47.290850+00:00", "event": "start", "knowledge_dir": "/tmp/task6-qt4yw_ei/knowledge", "index_dir": "/tmp/task6-qt4yw_ei/index"}
+{"time": "2026-09-17T22:08:47.290970+00:00", "event": "file_opened", "path": "/tmp/task6-qt4yw_ei/index/update.lock"}
+{"time": "2026-09-17T22:08:47.292288+00:00", "event": "finish", "status": "unchanged", "new_chunks": 0, "index_size": 191, "errors": 0, "elapsed_seconds": 0.0}
+{"time": "2026-09-17T22:08:47.292694+00:00", "event": "start", "knowledge_dir": "/tmp/task6-qt4yw_ei/knowledge", "index_dir": "/tmp/task6-qt4yw_ei/index"}
+{"time": "2026-09-17T22:08:47.292826+00:00", "event": "file_opened", "path": "/tmp/task6-qt4yw_ei/index/update.lock"}
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_01.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_01.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_02.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_02.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_03.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_03.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_04.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_04.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_05.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_05.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_06.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_06.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_07.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_07.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_08.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_08.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_09.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_09.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_10.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_10.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_11.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_11.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_12.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_12.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_13.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_13.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_14.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_14.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_15.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_15.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_16.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_16.md: 4
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_17.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_17.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_18.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_18.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_19.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_19.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_20.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_20.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_21.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_21.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_22.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_22.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_23.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_23.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_24.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_24.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_25.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_25.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_26.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_26.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_27.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_27.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_28.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_28.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_29.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_29.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_30.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_30.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_31.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_31.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_32.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_32.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_33.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_33.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_34.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_34.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_35.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_35.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_36.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_36.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_37.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_37.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_38.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_38.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_39.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_39.md: 1
+{"time": "2026-09-17T22:08:47.305540+00:00", "event": "embedding", "new_chunks": 1, "reused_chunks": 190}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4976.34it/s]
+{"time": "2026-09-17T22:08:50.008432+00:00", "event": "directory_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/88ee783cfce84729b51ddfa3e1ec686e"}
+{"time": "2026-09-17T22:08:50.016725+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/88ee783cfce84729b51ddfa3e1ec686e/faiss.index"}
+{"time": "2026-09-17T22:08:50.016787+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/88ee783cfce84729b51ddfa3e1ec686e/chunks.jsonl"}
+{"time": "2026-09-17T22:08:50.016819+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/88ee783cfce84729b51ddfa3e1ec686e/manifest.json"}
+{"time": "2026-09-17T22:08:50.016949+00:00", "event": "published", "path": "/tmp/task6-qt4yw_ei/index/current", "revision": "88ee783cfce84729b51ddfa3e1ec686e"}
+{"time": "2026-09-17T22:08:50.017034+00:00", "event": "finish", "status": "updated", "new_chunks": 1, "index_size": 191, "added_files": 0, "changed_files": 1, "deleted_files": 0, "errors": 0, "elapsed_seconds": 2.72}
+{"time": "2026-09-17T22:08:50.120621+00:00", "event": "start", "knowledge_dir": "/tmp/task6-qt4yw_ei/knowledge", "index_dir": "/tmp/task6-qt4yw_ei/index"}
+{"time": "2026-09-17T22:08:50.120742+00:00", "event": "file_opened", "path": "/tmp/task6-qt4yw_ei/index/update.lock"}
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_01.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_01.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_02.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_02.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_03.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_03.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_04.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_04.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_05.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_05.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_06.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_06.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_07.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_07.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_08.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_08.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_09.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_09.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_10.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_10.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_11.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_11.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_12.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_12.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_13.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_13.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_14.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_14.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_15.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_15.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_16.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_16.md: 4
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_17.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_17.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_18.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_18.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_19.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_19.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_20.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_20.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_21.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_21.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_22.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_22.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_23.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_23.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_24.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_24.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_25.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_25.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_26.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_26.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_27.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_27.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_28.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_28.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_29.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_29.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_30.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_30.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_31.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_31.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_32.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_32.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_33.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_33.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_34.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_34.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_35.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_35.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_36.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_36.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_37.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_37.md: 5
+Reading document: /tmp/task6-qt4yw_ei/knowledge/entity_38.md
+Created chunks for /tmp/task6-qt4yw_ei/knowledge/entity_38.md: 5
+{"time": "2026-09-17T22:08:50.151848+00:00", "event": "embedding", "new_chunks": 0, "reused_chunks": 190}
+{"time": "2026-09-17T22:08:50.169752+00:00", "event": "directory_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/d715268bffc44ef3bb25cf587487d4d1"}
+{"time": "2026-09-17T22:08:50.174202+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/d715268bffc44ef3bb25cf587487d4d1/faiss.index"}
+{"time": "2026-09-17T22:08:50.174261+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/d715268bffc44ef3bb25cf587487d4d1/chunks.jsonl"}
+{"time": "2026-09-17T22:08:50.174295+00:00", "event": "file_created", "path": "/tmp/task6-qt4yw_ei/index/revisions/d715268bffc44ef3bb25cf587487d4d1/manifest.json"}
+{"time": "2026-09-17T22:08:50.174412+00:00", "event": "published", "path": "/tmp/task6-qt4yw_ei/index/current", "revision": "d715268bffc44ef3bb25cf587487d4d1"}
+{"time": "2026-09-17T22:08:50.174479+00:00", "event": "finish", "status": "updated", "new_chunks": 0, "index_size": 190, "added_files": 0, "changed_files": 0, "deleted_files": 1, "errors": 0, "elapsed_seconds": 0.05}
+{"time": "2026-09-17T22:08:50.242652+00:00", "event": "real_test_passed", "checks": ["add", "search", "unchanged", "modify", "delete", "hot_reload"]}
+ok
+test_snapshot_lifecycle (tests.test_update_index.UpdateTests.test_snapshot_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 8.683s
+
+OK

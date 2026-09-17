@@ -41,3 +41,9 @@ log/
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Published index snapshots are runtime data
+vector_index/revisions/
+vector_index/current
+vector_index/update.lock
+vector_index/.current-*

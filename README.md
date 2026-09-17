@@ -52,3 +52,9 @@ API: `http://127.0.0.1:8000/docs`. Проверка ответов: `python chec
 ## Задание 5: демонстрация и prompt injection
 
 [Описание защиты и команды запуска](task5_demonstration.md). Реальные ответы сохранены в [текстовом логе](task5_run.log) и [JSON](tasks_artifacts/task5_results.json). Повторная проверка после индексации тестового документа: `python demonstrate_task5.py`.
+
+## Задание 6: ежедневное обновление индекса
+
+[Описание и проверка](task6_index_updates.md), [диаграмма](task6_architecture.puml).
+Сервис `index-updater` из Docker Compose обновляет индекс при запуске и ежедневно в 06:00 по Москве.
+Новые материалы помещайте в `knowledge_base/entity_*.md`; API подхватывает новую версию перед поиском.

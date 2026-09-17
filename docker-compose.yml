@@ -35,6 +35,24 @@ services:
       api:
         condition: service_healthy
     restart: unless-stopped
+  index-updater:
+    build: .
+    image: quantumforge-rag:task4
+    command: ["python", "update_index.py", "--schedule", "--hour-utc", "3", "--cache-folder", "/models", "--local-files-only"]
+    environment:
+      OMP_NUM_THREADS: "2"
+      MKL_NUM_THREADS: "2"
+    volumes:
+      - ./knowledge_base:/app/knowledge_base:ro
+      - ./fixtures:/app/fixtures:ro
+      - ./vector_index:/app/vector_index
+      - ./.cache/embeddings:/models:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    restart: unless-stopped
 secrets:
   yandex_api_key:
     file: ./yandex_ai_api_key.txt

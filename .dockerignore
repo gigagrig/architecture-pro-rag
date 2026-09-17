@@ -1,0 +1,9 @@
+**
+!requirements.txt
+!rag_bot/
+!rag_bot/*.py
+!run_bot.py
+!Dockerfile
+
+!build_index.py
+!update_index.py
