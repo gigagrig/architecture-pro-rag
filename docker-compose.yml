@@ -1,0 +1,62 @@
+services:
+  api:
+    build: .
+    image: quantumforge-rag:task4
+    env_file: .env
+    environment:
+      QUERY_LOG_PATH: /app/runtime/queries.jsonl
+      INDEX_DIR: /app/vector_index
+      EMBEDDING_CACHE: /models
+      LLM_API_KEY_FILE: /run/secrets/yandex_api_key
+    secrets:
+      - yandex_api_key
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./runtime:/app/runtime
+      - ./vector_index:/app/vector_index:ro
+      - ./.cache/embeddings:/models
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 180s
+    restart: unless-stopped
+  bot:
+    image: quantumforge-rag:task4
+    command: ["python", "run_bot.py"]
+    environment:
+      RAG_API_URL: http://api:8000
+      TELEGRAM_BOT_TOKEN_FILE: /run/secrets/telegram_token
+      TELEGRAM_ALLOWED_USER_IDS: ${TELEGRAM_ALLOWED_USER_IDS:-}
+      BOT_API_TIMEOUT: ${BOT_API_TIMEOUT:-330}
+    secrets:
+      - telegram_token
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+  index-updater:
+    build: .
+    image: quantumforge-rag:task4
+    command: ["python", "update_index.py", "--schedule", "--hour-utc", "3", "--cache-folder", "/models", "--local-files-only"]
+    environment:
+      OMP_NUM_THREADS: "2"
+      MKL_NUM_THREADS: "2"
+    volumes:
+      - ./knowledge_base:/app/knowledge_base:ro
+      - ./fixtures:/app/fixtures:ro
+      - ./vector_index:/app/vector_index
+      - ./.cache/embeddings:/models:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    restart: unless-stopped
+secrets:
+  yandex_api_key:
+    file: ./yandex_ai_api_key.txt
+  telegram_token:
+    file: ./telegram_bot_token.txt

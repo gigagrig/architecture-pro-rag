@@ -1,0 +1,38 @@
+@startuml
+title Задание 7: обработка одного тестового вопроса
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+
+actor "Оценщик\nevaluate.py" as evaluator
+participant "RAG-сервис" as rag
+database "Индекс FAISS" as index
+participant "Yandex LLM" as llm
+database "Журнал\nlogs.jsonl" as log
+
+== Поиск контекста ==
+evaluator -> rag : Вопрос из эталонного набора
+rag -> index : Поиск top-5 фрагментов
+index --> rag : Фрагменты и score
+rag -> rag : Проверить порог score\nи отфильтровать опасные фрагменты
+
+== Один из трёх исходов ==
+alt Ответ: есть контекст, генерация и проверка успешны
+  rag -> llm : Вопрос + контекст
+  llm --> rag : Ответ + обоснование
+  rag -> rag : Проверить ссылки на фрагменты\nи сформировать ответ с источниками
+else Отказ: нет допустимых фрагментов
+  rag -> rag : «Я не знаю», без источников
+else Ошибка: есть контекст, но LLM не ответила вовремя
+  rag -> llm : Вопрос + контекст
+  llm --> rag : Ошибка тайм-аута
+end
+
+== Общая оценка результата ==
+rag -> rag : Зафиксировать событие в CaptureLog:\nвопрос, ответ, источники, длина, статус
+rag --> evaluator : Ответ / отказ / исключение
+evaluator -> evaluator : Оценить событие по эталону:\nключевые слова, источники или отказ\nТехническая ошибка → passed=false
+evaluator -> log : Записать событие и оценку passed
+
+@enduml

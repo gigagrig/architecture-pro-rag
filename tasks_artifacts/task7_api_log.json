@@ -1,0 +1,54 @@
+{
+  "request_id": "d78c3090e29d438fab5414814138daa7",
+  "timestamp": "2026-09-17T22:15:51.278298+00:00",
+  "question": "Какой любимый десерт Kael Ardyn?",
+  "status": "unknown",
+  "answer": "Я не знаю. В базе знаний недостаточно информации для ответа.",
+  "answer_length": 60,
+  "successful_answer": false,
+  "has_retrieved_chunks": true,
+  "retrieved": [
+    {
+      "chunk_id": "entity_21-chunk-003",
+      "source": "knowledge_base/entity_21.md",
+      "title": "Kyren Vale",
+      "score": 0.7707375884056091
+    },
+    {
+      "chunk_id": "entity_21-chunk-001",
+      "source": "knowledge_base/entity_21.md",
+      "title": "Kyren Vale",
+      "score": 0.7682133913040161
+    },
+    {
+      "chunk_id": "entity_11-chunk-005",
+      "source": "knowledge_base/entity_11.md",
+      "title": "CX-9",
+      "score": 0.7675151228904724
+    },
+    {
+      "chunk_id": "entity_04-chunk-001",
+      "source": "knowledge_base/entity_04.md",
+      "title": "Renn Calder",
+      "score": 0.7659907341003418
+    },
+    {
+      "chunk_id": "entity_02-chunk-002",
+      "source": "knowledge_base/entity_02.md",
+      "title": "Xarn Velgor",
+      "score": 0.7651599645614624
+    }
+  ],
+  "eligible": [
+    "entity_21-chunk-003",
+    "entity_21-chunk-001",
+    "entity_11-chunk-005",
+    "entity_04-chunk-001",
+    "entity_02-chunk-002"
+  ],
+  "sources": [],
+  "error_type": null,
+  "duration_seconds": 4.098,
+  "index_revision": "/app/vector_index/revisions/82797435c72043eab80d9e19ffdd82f4",
+  "reason": "model_unknown_or_missing_evidence"
+}

@@ -1,0 +1,31 @@
+{
+  "run_id": "20260917T221826Z-b1eaa30f",
+  "started_at": "2026-09-17T22:18:26.537590+00:00",
+  "stages": {
+    "restored": {
+      "total": 11,
+      "passed": 10,
+      "expected_answers": 9,
+      "correct_answers": 8,
+      "expected_refusals": 2,
+      "correct_refusals": 2,
+      "false_refusals": 0,
+      "unsupported_answers": 0,
+      "errors": 0,
+      "retrieval_hits": 9,
+      "failed_cases": [
+        "known_03"
+      ],
+      "index_dir": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index",
+      "documents": 39,
+      "chunks": 186,
+      "index_revision": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/de658db7347444b98e640430a810afa1"
+    }
+  },
+  "model": "gpt://b1g2bu1h99h8aoj25qf5/aliceai-llm-flash/latest",
+  "min_score": 0.7,
+  "top_k": 5,
+  "golden_sha256": "d815757c9300f5e67f5005ec98ba8a42932ab2cb74384a95fc708b4313ad0047",
+  "failures": 1,
+  "finished_at": "2026-09-17T22:18:51.180137+00:00"
+}

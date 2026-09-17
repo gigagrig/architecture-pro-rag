@@ -1,0 +1,328 @@
+Evaluation started: 20260917T221342Z-a240229b; index=/home/dev15/Study/architecture-pro-rag/vector_index; golden=/home/dev15/Study/architecture-pro-rag/golden_questions.txt
+Created directory: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_01.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_03.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_04.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_05.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_06.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_07.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_08.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_09.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_10.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_11.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_12.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_13.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_14.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_15.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_16.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_17.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_18.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_19.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_20.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_21.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_22.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_23.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_24.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_25.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_26.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_27.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_28.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_29.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_30.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_31.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_33.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_34.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_35.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_36.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_37.md
+Created document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_38.md
+Created initial index file: runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/faiss.index
+Created initial index file: runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/chunks.jsonl
+Created initial index file: runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/manifest.json
+{"time": "2026-09-17T22:13:47.397100+00:00", "event": "start", "knowledge_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base", "index_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/gaps/vector_index"}
+{"time": "2026-09-17T22:13:47.397218+00:00", "event": "file_opened", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/update.lock"}
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_01.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_01.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_03.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_03.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_04.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_04.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_05.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_05.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_06.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_06.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_07.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_07.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_08.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_08.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_09.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_09.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_10.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_10.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_11.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_11.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_12.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_12.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_13.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_13.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_14.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_14.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_15.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_15.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_16.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_16.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_17.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_17.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_18.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_18.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_19.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_19.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_20.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_20.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_21.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_21.md: 3
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_22.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_22.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_23.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_23.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_24.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_24.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_25.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_25.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_26.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_26.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_27.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_27.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_28.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_28.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_29.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_29.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_30.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_30.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_31.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_31.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_33.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_33.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_34.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_34.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_35.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_35.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_36.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_36.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_37.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_37.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_38.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/gaps/knowledge_base/entity_38.md: 4
+{"time": "2026-09-17T22:13:47.409537+00:00", "event": "embedding", "new_chunks": 96, "reused_chunks": 52}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4019.18it/s]
+{"time": "2026-09-17T22:14:41.680472+00:00", "event": "directory_created", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/revisions/fbd8cf0a6879417999fb410a443784a1"}
+{"time": "2026-09-17T22:14:41.683414+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/revisions/fbd8cf0a6879417999fb410a443784a1/faiss.index"}
+{"time": "2026-09-17T22:14:41.683464+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/revisions/fbd8cf0a6879417999fb410a443784a1/chunks.jsonl"}
+{"time": "2026-09-17T22:14:41.683496+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/revisions/fbd8cf0a6879417999fb410a443784a1/manifest.json"}
+{"time": "2026-09-17T22:14:41.683602+00:00", "event": "published", "path": "runtime/task7/20260917T221342Z-a240229b/gaps/vector_index/current", "revision": "fbd8cf0a6879417999fb410a443784a1"}
+{"time": "2026-09-17T22:14:41.683647+00:00", "event": "finish", "status": "updated", "new_chunks": 96, "index_size": 148, "added_files": 36, "changed_files": 0, "deleted_files": 38, "errors": 0, "elapsed_seconds": 54.29}
+Created restore seed: runtime/task7/20260917T221342Z-a240229b/restored/vector_index/faiss.index
+Created restore seed: runtime/task7/20260917T221342Z-a240229b/restored/vector_index/chunks.jsonl
+Created restore seed: runtime/task7/20260917T221342Z-a240229b/restored/vector_index/manifest.json
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_01.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_02.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_03.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_04.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_05.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_06.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_07.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_08.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_09.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_10.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_11.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_12.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_13.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_14.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_15.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_16.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_17.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_18.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_19.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_20.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_21.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_22.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_23.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_24.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_25.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_26.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_27.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_28.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_29.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_30.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_31.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_32.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_33.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_34.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_35.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_36.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_37.md
+Restored document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_38.md
+{"time": "2026-09-17T22:14:41.696576+00:00", "event": "start", "knowledge_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base", "index_dir": "/home/dev15/Study/architecture-pro-rag/runtime/task7/20260917T221342Z-a240229b/restored/vector_index"}
+{"time": "2026-09-17T22:14:41.696700+00:00", "event": "file_opened", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/update.lock"}
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_01.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_01.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_02.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_02.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_03.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_03.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_04.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_04.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_05.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_05.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_06.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_06.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_07.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_07.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_08.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_08.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_09.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_09.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_10.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_10.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_11.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_11.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_12.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_12.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_13.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_13.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_14.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_14.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_15.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_15.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_16.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_16.md: 4
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_17.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_17.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_18.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_18.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_19.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_19.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_20.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_20.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_21.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_21.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_22.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_22.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_23.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_23.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_24.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_24.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_25.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_25.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_26.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_26.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_27.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_27.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_28.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_28.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_29.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_29.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_30.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_30.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_31.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_31.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_32.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_32.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_33.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_33.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_34.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_34.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_35.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_35.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_36.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_36.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_37.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_37.md: 5
+Reading document: runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_38.md
+Created chunks for runtime/task7/20260917T221342Z-a240229b/restored/knowledge_base/entity_38.md: 5
+{"time": "2026-09-17T22:14:41.709869+00:00", "event": "embedding", "new_chunks": 138, "reused_chunks": 52}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5563.00it/s]
+{"time": "2026-09-17T22:15:51.858836+00:00", "event": "directory_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/3c2413e4c0974c478c2788218a93f667"}
+{"time": "2026-09-17T22:15:51.874935+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/3c2413e4c0974c478c2788218a93f667/faiss.index"}
+{"time": "2026-09-17T22:15:51.875019+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/3c2413e4c0974c478c2788218a93f667/chunks.jsonl"}
+{"time": "2026-09-17T22:15:51.875056+00:00", "event": "file_created", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/revisions/3c2413e4c0974c478c2788218a93f667/manifest.json"}
+{"time": "2026-09-17T22:15:51.875170+00:00", "event": "published", "path": "runtime/task7/20260917T221342Z-a240229b/restored/vector_index/current", "revision": "3c2413e4c0974c478c2788218a93f667"}
+{"time": "2026-09-17T22:15:51.875235+00:00", "event": "finish", "status": "updated", "new_chunks": 138, "index_size": 190, "added_files": 38, "changed_files": 0, "deleted_files": 36, "errors": 0, "elapsed_seconds": 70.18}
+Created or opened request log: /home/dev15/Study/architecture-pro-rag/logs.jsonl
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13150.15it/s]
+/home/dev15/Study/architecture-pro-rag/rag_bot/retrieval.py:25: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if self.model.get_sentence_embedding_dimension() != self.index.d:
+baseline: known_01: Кто сестра-близнец Kael Ardyn?
+PASS: Сестра-близнец Kael Ardyn — Lyra Voss.
+baseline: known_02: На какой планете вырос Kael Ardyn?
+PASS: Kael Ardyn вырос на пустынной планете Драксос (Draxos).
+baseline: known_03: Что за оружие arcblade?
+PASS: Arcblade — это светящийся лазерный меч длиной около 3 футов (0,91 м), излучаемый из металлической рукояти длиной около 10,5 дюймов (27 см). Источником энергии меча служит кристалл кибера. Arcblade — фирменное оружие Ордена Стражей Эфира и Пакта Нуль, но может использоваться любым человеком. Существует несколько вариаций arcblade, включая двулезвийный, с изогнутой рукоятью, с перекрестной гардой и другие.
+baseline: known_04: К какому виду принадлежит Bronn Kesh?
+PASS: Bronn Kesh принадлежит к виду Vardani.
+baseline: known_05: Как называется корабль, на котором Bronn Kesh служит вторым пилотом?
+PASS: Корабль называется Dawn Skipper.
+baseline: known_06: Кто ученик Quorin Jaal в Veiled Omen?
+PASS: Учениками Quorin Jaal в Veiled Omen являются Orin Valis и Aeron Ardyn.
+baseline: known_07: Какое обозначение было у Korr на службе в Ascendant Order?
+PASS: Обозначение Korr на службе в Ascendant Order — FN-2187.
+baseline: gap_01: Кем Xarn Velgor приходится Kael Ardyn?
+PASS: Xarn Velgor — отец Kael Ardyn.
+baseline: gap_02: Какие объекты способен уничтожать Void Core?
+PASS: Void Core способен уничтожать целые планеты.
+baseline: absent_01: Какой любимый десерт Kael Ardyn?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+baseline: absent_02: Какой пароль от Wi-Fi в офисе QuantumForge?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4136.11it/s]
+/home/dev15/Study/architecture-pro-rag/rag_bot/retrieval.py:25: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if self.model.get_sentence_embedding_dimension() != self.index.d:
+gaps: known_01: Кто сестра-близнец Kael Ardyn?
+PASS: Сестра-близнец Kael Ardyn — Lyra Voss.
+gaps: known_02: На какой планете вырос Kael Ardyn?
+PASS: Kael Ardyn вырос на пустынной планете Драксос (Draxos).
+gaps: known_03: Что за оружие arcblade?
+PASS: Arcblade — это светящийся лазерный меч длиной около 0,91 м, который испускается из металлической рукояти длиной около 27 см. Источником его энергии служит кристалл кибера. Это оружие используют Орден Стражей Эфира и Клятва Нуля, существуют разные его вариации.
+gaps: known_04: К какому виду принадлежит Bronn Kesh?
+PASS: Bronn Kesh принадлежит к виду Vardani.
+gaps: known_05: Как называется корабль, на котором Bronn Kesh служит вторым пилотом?
+PASS: Корабль, на котором Bronn Kesh служит вторым пилотом, называется Dawn Skipper.
+gaps: known_06: Кто ученик Quorin Jaal в Veiled Omen?
+PASS: Ученик Quorin Jaal в Veiled Omen — Orin Valis.
+gaps: known_07: Какое обозначение было у Korr на службе в Ascendant Order?
+PASS: Обозначение Korr на службе в Ascendant Order — FN-2187.
+gaps: gap_01: Кем Xarn Velgor приходится Kael Ardyn?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+gaps: gap_02: Какие объекты способен уничтожать Void Core?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+gaps: absent_01: Какой любимый десерт Kael Ardyn?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+gaps: absent_02: Какой пароль от Wi-Fi в офисе QuantumForge?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8184.69it/s]
+/home/dev15/Study/architecture-pro-rag/rag_bot/retrieval.py:25: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if self.model.get_sentence_embedding_dimension() != self.index.d:
+restored: known_01: Кто сестра-близнец Kael Ardyn?
+PASS: Сестра-близнец Kael Ardyn — Lyra Voss.
+restored: known_02: На какой планете вырос Kael Ardyn?
+PASS: Kael Ardyn вырос на пустынной планете Драксос (Draxos).
+restored: known_03: Что за оружие arcblade?
+PASS: Arcblade — это светящийся лазерный меч длиной около 0,91 м, который исходит из металлической рукояти длиной около 27 см. Источником энергии для arcblade служит кристалл кибера. Это фирменное оружие Ордена Стражей Эфира (используют синие, зелёные и другие цвета) и Пакта Нуль (используют красные клинки). Существует несколько вариаций arcblade, включая двуклинковый, с изогнутой рукоятью, с крестовиной и другие.
+restored: known_04: К какому виду принадлежит Bronn Kesh?
+PASS: Bronn Kesh принадлежит к виду Vardani.
+restored: known_05: Как называется корабль, на котором Bronn Kesh служит вторым пилотом?
+PASS: Корабль, на котором Bronn Kesh служит вторым пилотом, называется Dawn Skipper.
+restored: known_06: Кто ученик Quorin Jaal в Veiled Omen?
+PASS: Учениками Quorin Jaal в Veiled Omen являются Orin Valis и Aeron Ardyn.
+restored: known_07: Какое обозначение было у Korr на службе в Ascendant Order?
+PASS: Обозначение Korr на службе в Ascendant Order — FN-2187.
+restored: gap_01: Кем Xarn Velgor приходится Kael Ardyn?
+PASS: Xarn Velgor — отец Kael Ardyn.
+restored: gap_02: Какие объекты способен уничтожать Void Core?
+PASS: Void Core способен уничтожать целые планеты.
+restored: absent_01: Какой любимый десерт Kael Ardyn?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+restored: absent_02: Какой пароль от Wi-Fi в офисе QuantumForge?
+PASS: Я не знаю. В базе знаний недостаточно информации для ответа.
+Created summary: tasks_artifacts/task7_summary.json; appended log: logs.jsonl
+Evaluation finished; failures=0

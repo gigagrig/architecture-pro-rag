@@ -1,0 +1,10 @@
+index-updater-1  | Reading document: knowledge_base/entity_38.md
+index-updater-1  | Created chunks for knowledge_base/entity_38.md: 5
+index-updater-1  | {"time": "2026-09-17T22:08:50.553852+00:00", "event": "embedding", "new_chunks": 0, "reused_chunks": 190}
+index-updater-1  | {"time": "2026-09-17T22:08:50.565388+00:00", "event": "directory_created", "path": "vector_index/revisions/82797435c72043eab80d9e19ffdd82f4"}
+index-updater-1  | {"time": "2026-09-17T22:08:50.571314+00:00", "event": "file_created", "path": "vector_index/revisions/82797435c72043eab80d9e19ffdd82f4/faiss.index"}
+index-updater-1  | {"time": "2026-09-17T22:08:50.571363+00:00", "event": "file_created", "path": "vector_index/revisions/82797435c72043eab80d9e19ffdd82f4/chunks.jsonl"}
+index-updater-1  | {"time": "2026-09-17T22:08:50.571534+00:00", "event": "file_created", "path": "vector_index/revisions/82797435c72043eab80d9e19ffdd82f4/manifest.json"}
+index-updater-1  | {"time": "2026-09-17T22:08:50.571761+00:00", "event": "published", "path": "vector_index/current", "revision": "82797435c72043eab80d9e19ffdd82f4"}
+index-updater-1  | {"time": "2026-09-17T22:08:50.571842+00:00", "event": "finish", "status": "updated", "new_chunks": 0, "index_size": 190, "added_files": 39, "changed_files": 0, "deleted_files": 0, "errors": 0, "elapsed_seconds": 0.04}
+index-updater-1  | {"time": "2026-09-17T22:08:50.572024+00:00", "event": "scheduled", "next_run": "2026-09-18T03:00:00+00:00"}

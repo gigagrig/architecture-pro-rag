@@ -26,7 +26,24 @@ go.work.sum
 
 # env file
 .env
+.venv
+__pycache__/
+*.py[cod]
+
+
+#credentials
+telegram_bot_token.txt
+*_api_key.txt
+.cache/
+runtime/
+log/
 
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Published index snapshots are runtime data
+vector_index/revisions/
+vector_index/current
+vector_index/update.lock
+vector_index/.current-*
